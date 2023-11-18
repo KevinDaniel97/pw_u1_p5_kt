@@ -14,7 +14,7 @@ h6 {
 }
 
 .menu {
-    background: rgb(14, 255, 175);
+    background: rgb(198, 174, 14);
     text-align: left;
 }
 
@@ -31,7 +31,64 @@ body {
 
 .agrupar {
     border: 1px solid black;
-    background: white;
+    background: wheat;
     width: 900px;
-    margin: 20px;
+    height: 1500px;
+    margin: 20px auto;
+}
+
+.cabecera {
+    background: #FFFBB9;
+    border: 20px solid #ece8b4;
+    padding: 20px;
+}
+
+.seccion {
+    float: left;
+    width: 600px;
+    margin: 10px;
+}
+
+article {
+    background: #FFFBB9;
+    border: 1px solid #3285ea;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+time {
+    color: thistle;
+
+}
+
+article footer {
+    text-align: right;
+
+}
+
+#idreferencias {
+    width: 250px;
+    float: right;
+    margin: 20px 0px;
+    border: 1px solid #9cc2f1;
+    margin-right: 20px;
+}
+
+.pie {
+    clear: both;
+    height: 150px;
+
+}
+
+#idreferencias blockquote {
+    border: 1px solid black;
+    padding: 40px;
+    background: rgb(230, 158, 158);
+    margin-bottom: 20px;
+}
+
+img {
+    width: 300px;
+    height: 150px;
+    margin: 20px auto;
 }

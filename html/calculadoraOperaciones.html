@@ -13,35 +13,36 @@
 <body>
     <section>
         <div class="container">
+            <section>
+                <div class="calculadora-general">
+                    <h1>Calculadora</h1>
+                    <label class="labelResultado" id="labelResultado" for="">Resultado</label>
 
-            <div class="calculadora-general">
-                <h1>Calculadora</h1>
-                <label class="labelResultado" id="labelResultado" for="">Resultado</label>
+                    <div class="calculadora-numeros">
+                        <button onclick="calc('1')">1</button>
+                        <button onclick="calc('2')">2</button>
+                        <button onclick="calc('3')">3</button>
 
-                <div class="calculadora-numeros">
-                    <button onclick="calc('1')">1</button>
-                    <button onclick="calc('2')">2</button>
-                    <button onclick="calc('3')">3</button>
+                        <button onclick="calc('4')">4</button>
+                        <button onclick="calc('5')">5</button>
+                        <button onclick="calc('6')">6</button>
 
-                    <button onclick="calc('4')">4</button>
-                    <button onclick="calc('5')">5</button>
-                    <button onclick="calc('6')">6</button>
+                        <button onclick="calc('7')">7</button>
+                        <button onclick="calc('8')">8</button>
+                        <button onclick="calc('9')">9</button>
+                        <button class="col-3" onclick="calc('0')">0</button>
+                    </div>
+                    <div class="calculadora-operaciones">
 
-                    <button onclick="calc('7')">7</button>
-                    <button onclick="calc('8')">8</button>
-                    <button onclick="calc('9')">9</button>
-                    <button class="col-3" onclick="calc('0')">0</button>
+                        <button onclick="calc('+')">+</button>
+                        <button onclick="calc('-')">-</button>
+                        <button onclick="calc('*')">*</button>
+                        <button onclick="calc('/')">/</button>
+                        <button class="col-2" onclick="calcClear()"> C </button>
+                        <button class="col-2" onclick="calcRes()">=</button>
+                    </div>
                 </div>
-                <div class="calculadora-operaciones">
-
-                    <button onclick="calc('+')">+</button>
-                    <button onclick="calc('-')">-</button>
-                    <button onclick="calc('*')">*</button>
-                    <button onclick="calc('/')">/</button>
-                    <button class="col-2" onclick="calcClear()"> C </button>
-                    <button class="col-2" onclick="calcRes()">=</button>
-                </div>
-            </div>
+            </section>
         </div>
     </section>
     <footer></footer>

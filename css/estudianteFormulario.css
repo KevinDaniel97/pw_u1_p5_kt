@@ -54,6 +54,12 @@ input:focus {
 
 }
 
+.guardar:hover {
+    color: #1818d4;
+    background-color: rgb(72, 255, 0);
+
+}
+
 
 .idtitulo {
     font-size: 25px;

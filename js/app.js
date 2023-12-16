@@ -42,11 +42,19 @@ const app = Vue.createApp({
             console.log(event.charCode)
 
         },
+        presionandoTeclas({ charCode }) {
+            console.log('presionando.....')
+            console.log(event.charCode)
+
+        },
         presionarEnter(event) {
             if (event.charCode === 13) {
                 const estu = { nombre: this.nombre, apellido: this.apellido }
                 this.lista.push(estu)
             }
+        },
+        presionarEnterMod() {
+            console.log("presionando 2 ...........")
         }
     },
     watch: {

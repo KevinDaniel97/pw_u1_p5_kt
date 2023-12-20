@@ -1,0 +1,88 @@
+body {
+    background-color: #59ABE3;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 340px;
+    height: 450px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    padding: 20px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 40px -10px #000;
+}
+
+h2 {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 5px 2px;
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #bebed2;
+    background: none;
+}
+
+input:focus {
+    border-bottom: 3px solid #78788c;
+}
+
+.botGuardar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+}
+
+.guardar:hover {
+    color: #1818d4;
+    background-color: rgb(72, 255, 0);
+
+}
+
+
+.idtitulo {
+    font-size: 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tabla {
+    margin-top: 70px;
+    background: #59D7E3;
+}
+.tablita{
+    display: grid;
+    grid-template-columns:repeat(6, auto) ;
+    background: #5980E3;
+    color: white;
+    font-weight: bold;
+}
+.tablaLista{
+    display: grid;
+    grid-template-columns:repeat(6, auto) ;
+
+}

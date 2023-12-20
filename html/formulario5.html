@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario5.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="idtitulo">
+                <h1>Estudiante </h1>
+            </div>
+        </header>
+        <nav></nav>
+        <section>
+            <div id="myApp">
+
+                <form class="form" action="" method="">
+                    <h2>Nuevo Estudiante</h2>
+                    <p type="Nombre:"><input @keypress="presionandoTeclas" id="idNombre" type="text" v-model="nombre">
+                    </p>
+                    <p type="Apellido:"><input @keypress="presionandoTeclas" id="idApellido" type="text"
+                            v-model="apellido"></p>
+                    <p type="Hobie:"><input @keypress="presionandoTeclas" id="idHobie" type="text" v-model="hobie"></p>
+                    <p type="Genero:"><input @keypress="presionandoTeclas" id="idGenero" type="text" v-model="genero">
+                    </p>
+                    <p type="Pais:"><input @keypress="presionandoTeclas" id="idAPis" type="text" v-model="pais"></p>
+                    <div class="botGuardar">
+                        <button type="button" @click="guardar">GUARDAR</button>
+
+                    </div>
+                    <div v-show="lista.length > 1" class="tabla">
+                        <div class="tablita">
+                            <div class="columnas">Nombre</div>
+                            <div class="columnas">Apellido</div>
+                            <div class="columnas">Hobie</div>
+                            <div class="columnas">Genero</div>
+                            <div class="columnas">Pais</div>
+                        </div>
+                        <div v-for="({nombre, apellido, hobie,genero, pais},index) in lista" class="tablaLista">
+                            <div class="columnas">{{nombre}}</div>
+                            <div class="columnas">{{apellido}}</div>
+                            <div class="columnas">{{hobie}}</div>
+                            <div class="columnas">{{genero}}</div>
+                            <div class="columnas">{{pais}}</div>
+                        </div>
+                    </div>
+
+            </div>
+            </form>
+
+    </div>
+    <script src="../js/app2.js"></script>
+    </section>
+
+    <footer></footer>
+    </div>
+</body>
+
+</html>

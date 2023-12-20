@@ -23,21 +23,22 @@
             <p>{{false?'Verdadero':'Falso'}}</p>
             <p>{{mensaje}}</p>
             <p>{{valor}}</p>
-            <button v-on:click="cambiarMensaje">Cambiar mensaje</button>
-            <button v-on:click="cambiarNumero">sumar</button>
+            <button @click="cambiarMensaje">Cambiar mensaje</button>
+            <button @click="cambiarNumero">sumar</button>
             <hr />
             <p>{{lista}}</p>
             <label for="">Nombre</label>
-            <input v-on:keypress="presionandoTeclas" id="idNombre" type="text" v-model="nombre">
+            <input @keypress="presionandoTeclas" id="idNombre" type="text" v-model="nombre">
             <label for="">Apellido</label>
-            <input v-on:keypress="presionarEnter" id="idApellido " type="text" v-model="apellido">
-            <button v-on:click="agregarEstudiante">Agregar</button>
+            <input @keypress.enter="presionarEnterMod" id="idApellido " type="text" v-model="apellido">
+            <button @click="agregarEstudiante">Agregar</button>
             {{nombre}}
             {{apellido}}
 
             <ul>
-                <li v-for="({nombre, apellido}, index) in lista">{{index+1}}: {{nombre }} - {{apellido}}
-                    <button>Editar</button>
+                <li v-show="nombre!==''" v-for="({nombre, apellido}, index) in lista">{{index+1}}: {{nombre }} -
+                    {{apellido}}
+                    <button v-if="nombre!==null">Editar</button>
                 </li>
 
             </ul>
